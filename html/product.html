@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../fontawesome/css/all.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bootstrap Theme</title>
+</head>
+<body>
+    <!-- START HEAR-->
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand text-dark">
+            <img src="../img/logo.png" width="50" height="40" alt="" />
+            Kitchen Story</a
+          >
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ui class="navbar-nav">
+             </ui>  
+             <ui class="navbar-nav ms-auto">
+                 <li>
+                     <div class="nav-item dropdown mr-3">
+                         <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                             <i class="fas fa-user"></i> Hello User
+                         </a>
+                         <div class="dropdown-menu">
+                             <a href="profile.html" class="dropdown-item text-dark">
+                                 <i class="fas fa-user-circle"></i> Profile
+                             </a>
+                         </div>
+                     </div>  
+                 </li>
+                 <li class="nav-item">
+                     <a href="login.html" class="nav-link text-dark">
+                         <i class="fas fa-user-times"></i> Logout
+                     </a>
+                 </li>
+             </ui>          
+         </div>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <header id="main-header" class="text-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <h6 class="display-6">Order Summary - G123101</h6> 
+            </div>
+          </div>
+        </div>
+      </header>
+    
+    <!-- product-->
+    <section id="product">
+        <div class="container pb-5 mt-n2 mt-md-n3">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="h6 d-flex flex-wrap justify-content-between align-items-center px-4 py-3 bg-light">
+                        <span>Products</span><a class="font-size-sm hlink" href="index.html">                            
+                            <i class="fa fa-angle-double-left mx-2" aria-hidden="true"></i>Continue shopping</a></h2>
+                    <!-- Item --> 
+                    <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
+                        <div class="media d-block d-sm-flex text-sm-left">
+                            <a class="cart-item-thumb mx-auto mr-sm-4" href="#">
+                                <img src="../img/dairy/Arla-Natural-Yoghurt_Iconic.jpg" alt="product">
+                            </a>
+                            <div class="media-body pt-3">
+                                <h3 class="product-card-title font-weight-semibold border-0 pb-0"><a href="#" class="hlink" >Arla Natural Yoghurt</a></h3>
+                                <div class="font-size-sm"><span class="text-muted mr-3">Size:</span>1 Liter</div>
+                                <div class="font-size-sm"><span class="text-muted mr-3">Category:</span>Diary</div>
+                                <div class="font-size-lg text-primary pt-2"><span>&#8377;</span>125.00</div>
+                            </div>  
+                        </div>  
+                        <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-sm-left" >
+                            <div class="form-group mb-2">
+                                <label class="mb-2" for="quantity1">Quantity</label>
+                                <input class="form-control form-control-sm" type="number" id="quantity1" value="1">
+                            </div>
+                            <button class="btn btn-outline-secondary btn-sm w-100 mb-2" type="button">
+                                <i class="fa fa-refresh mx-2" aria-hidden="true"></i>Update Cart</button>
+                            <button class="btn btn-outline-danger btn-sm w-100 mb-2" type="button">
+                                <i class="fa fa-trash mx-2" aria-hidden="true"></i>Remove</button>
+                        </div>                        
+                    </div>
+                    <!-- Item --> 
+                    <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
+                        <div class="media d-block d-sm-flex text-sm-left">
+                            <a class="cart-item-thumb mx-auto mr-sm-4" href="#">
+                                <img src="../img/fruit/Mango_Iconic.jpg" alt="product">
+                            </a>
+                            <div class="media-body pt-3">
+                                <h3 class="product-card-title font-weight-semibold border-0 pb-0"><a href="#" class="hlink" >Arla Natural Yoghurt</a></h3>
+                                <div class="font-size-sm"><span class="text-muted mr-3">Size:</span>8.5</div>
+                                <div class="font-size-sm"><span class="text-muted mr-3">Color:</span>Single</div>
+                                <div class="font-size-lg text-primary pt-2"><span>&#8377;</span>25.00</div>
+                            </div>  
+                        </div>  
+                        <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-sm-left" >
+                            <div class="form-group mb-2">
+                                <label class="mb-2" for="quantity1">Quantity</label>
+                                <input class="form-control form-control-sm" type="number" id="quantity1" value="1">
+                            </div>
+                            <button class="btn btn-outline-secondary btn-sm w-100 mb-2" type="button">
+                                <i class="fa fa-refresh mx-2" aria-hidden="true"></i>Update Cart</button>
+                            <button class="btn btn-outline-danger btn-sm w-100 mb-2" type="button">
+                                <i class="fa fa-trash mx-2" aria-hidden="true"></i>Remove</button>
+                        </div>                        
+                    </div>
+                    <!-- Item --> 
+                    <div class="d-sm-flex justify-content-between my-4 pb-4 border-bottom">
+                        <div class="media d-block d-sm-flex text-sm-left">
+                            <a class="cart-item-thumb mx-auto mr-sm-4" href="#">
+                                <img src="../img/Vegetables/Solid-Potato_Iconic.jpg" alt="product">
+                            </a>
+                            <div class="media-body pt-3">
+                                <h3 class="product-card-title font-weight-semibold border-0 pb-0"><a href="#" class="hlink" >Arla Natural Yoghurt</a></h3>
+                                <div class="font-size-sm"><span class="text-muted mr-3">Size:</span>1 Kg</div>
+                                <div class="font-size-sm"><span class="text-muted mr-3">Category:</span>Vegetable</div>
+                                <div class="font-size-lg text-primary pt-2"><span>&#8377;</span>65.00</div>
+                            </div>  
+                        </div>  
+                        <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-sm-left" >
+                            <div class="form-group mb-2">
+                                <label class="mb-2" for="quantity1">Quantity</label>
+                                <input class="form-control form-control-sm" type="number" id="quantity1" value="1">
+                            </div>
+                            <button class="btn btn-outline-secondary btn-sm w-100 mb-2" type="button">
+                                <i class="fa fa-refresh mx-2" aria-hidden="true"></i>Update Cart</button>
+                            <button class="btn btn-outline-danger btn-sm w-100 mb-2" type="button">
+                                <i class="fa fa-trash mx-2" aria-hidden="true"></i>Remove</button>
+                        </div>                        
+                    </div>                                        
+                
+                </div>
+
+                <!-- Sidebar-->
+                <div class="col-md-4">                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="h6 px-4 py-1 bg-light text-right">Total - <span class="mx-2">&#8377;</span>270.49</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-start">
+                                <div class="col-6 mr-2">
+                                    <h6 class="mb-1 text-right">Subtotal</h6>
+                                </div>
+                                <div class="col-6 mr-2">
+                                    <h6 class="mb-1 text-right"><span class="mx-2">&#8377;</span>200.49</h6>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-6 mr-2">
+                                    <h6 class="mb-1 text-right">Shipping</h6>
+                                </div>
+                                <div class="col-6 mr-2">
+                                    <h6 class="mb-1 text-right"><span class="mx-2">&#8377;</span>50.00</h6>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-6 mr-2">
+                                    <h6 class="mb-1 text-right">Tax</h6>
+                                </div>
+                                <div class="col-6 mr-2">
+                                    <h6 class="mb-1 text-right"><span class="mx-2">&#8377;</span>20.00</h6>
+                                </div>
+                            </div>
+                            <div class="row align-items-start mt-3">
+                                <div class="btn-group" role="group" aria-label=" radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary" for="btnradio1">
+                                    <img src="../img/pay/mastercard.jpg" width="30" height="30">Credit Card
+                                    </label>
+                                  
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio2">
+                                        <img src="../img/pay/visa.jpg" width="30" height="30">Debit Card
+                                    </label>
+                                  
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio3">
+                                        <img src="../img/pay/paypal.jpg" width="30" height="30">PayPal
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row align-items-start mt-3">
+                                <div class="col-4 mr-2">
+                                    <label class="form-control-label text-left">Name on Card</label>
+                                </div>
+                                <div class="col-8 mr-2">
+                                    <input type="text" id="cname" name="cname" placeholder="Johnny Doe">
+                                </div>
+                            </div>
+                            <div class="row align-items-start mt-3">
+                                <div class="col-4 mr-2">
+                                    <label class="form-control-label text-left">Card Number</label>
+                                </div>
+                                <div class="col-8 mr-2">
+                                    <input type="text" id="cname" name="cname" placeholder="1111 2222 3333 4444">
+                                </div>
+                            </div>
+                            <div class="row align-items-start mt-3">
+                                <div class="col-4 mr-2">
+                                    <label class="form-control-label text-left">Expiration Date</label>
+                                </div>
+                                <div class="col-8 mr-2">
+                                    <input type="text" id="cname" name="cname" placeholder="MM/YYYY">
+                                </div>
+                            </div>
+                            <div class="row align-items-start mt-3">
+                                <div class="col-4 mr-2">
+                                    <label class="form-control-label text-left">CVV</label>
+                                </div>
+                                <div class="col-8 mr-2">
+                                    <input type="text" id="cname" name="cname" placeholder="***">
+                                </div>
+                            </div>
+                            <div class="row align-items-start mt-3">
+                                <button class="btn btn-primary"> <span> <span id="checkout">Checkout</span> <span id="check-amt">$270.49</span> </span> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Support</h5>
+                            <p class="card-text">+91 1-800-123-6541</p>
+                            <a href="#" class="btn btn-primary">Contact Us</a>
+                        </div>
+                    </div>                    
+    
+                </div>
+                <!-- Payment-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-light text-dark mt-5 p-17">
+        <div class="container">
+            <div class="row mb-10">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                        Copyright &copy; <span id="year"></span>
+                        Kitchen Story
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script>
+        // get the current year 
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+</html>

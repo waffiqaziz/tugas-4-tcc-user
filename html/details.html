@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../fontawesome/css/all.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Theme</title>
+</head>
+<body>
+    <!-- START HEAR-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-dark">
+                <img src="../img/logo.png" alt="Kitchen Store" style="width:75px;height:45px;">
+                </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ui class="navbar-nav">
+                    <li class="nav-item px-1">
+                        <a href="index.html" class="nav-link active text-dark">Dashboard</a>                        
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="product.html" class="nav-link text-dark">Product</a>                        
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="categories.html" class="nav-link text-dark">Categories</a>                        
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="../html/users.html" class="nav-link text-dark">Users</a>                        
+                    </li>
+                </ui>  
+                <ui class="navbar-nav ms-auto">
+                    <li>
+                        <div class="nav-item dropdown mr-3">
+                            <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                                <i class="fas fa-user"></i> Welcome Admin
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="profile.html" class="dropdown-item text-dark">
+                                    <i class="fas fa-user-circle"></i> Profile
+                                </a>
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link text-dark">
+                            <i class="fas fa-user-times"></i> Logout
+                        </a>
+                    </li>
+                </ui>          
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="main-header" class="py-2 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-6"> Product Details</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Action -->
+    <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html" class="btn btn-light w-100">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="btn btn-success w-100">
+                        <i class="fas fa-check"></i> Save
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="" class="btn btn-warning  w-100">
+                        <i class="fas fa-trash"></i> Delete
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posts-->
+    <section id="details">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="display-6">Edit Product</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <lable for="title">Product Name</lable>
+                                    <input type="text" name="pname" id="pname" value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <lable for="category">Category</lable>
+                                    <select name="category" class="form-control">
+                                        <option selected value="">Fruit</option>
+                                        <option value="">Vegetable</option>
+                                        <option value="">Juice</option>
+                                        <option value="">Dairy</option>                                                                                                
+                                    </select>
+                                </div> 
+                                <div class="form-group">
+                                    <img src="../img/fruit/Royal-Gala_Iconic.jpg" alt="Royal-Gala-Apple" style="width:75px;height:75px;">
+                                </div>
+                                <div class="form-group">
+                                    <label for="image">Upload Image</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="image">
+                                       <!-- <label for="image" class="custom-file-lable">Choose File</label> -->
+                                    </div>
+                                    <small class="form-text text-muted">Max size 3MB</small>
+                                </div>   
+                                <div class="form-group">
+                                    <label for="ohi">On Hand Inventory</label>
+                                    <input type="text" name="ohi" id="ohi" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="price">Price</label>
+                                    <input type="text" name="price" id="price" class="form-control">
+                                    <small class="form-text text-muted">Price are in US Dollars</small>
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="body">Description</label>
+                                    <textarea name="editor1" class="form-control">Golden Delicious has a white juicy pulp and a greenish yellow shell. 
+                                        The taste is mellow and sweet, making Golden Delicious suitable for desserts.</textarea>
+                                </div>                    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-light text-dark mt-5 p-17">
+        <div class="container">
+            <div class="row mb-10">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                        Copyright &copy; <span id="year"></span>
+                        Kitchen Story
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+
+    <script>
+        // get the current year 
+        $('#year').text(new Date().getFullYear());
+
+        CKEDITOR.replace( 'editor1' );
+    </script>
+</body>
+</html>
